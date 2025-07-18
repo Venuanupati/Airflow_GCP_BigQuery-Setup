@@ -1,49 +1,59 @@
-**Airflow + GCP + BigQuery: ETL Pipeline & Reporting**
+# **Airflow + GCP + BigQuery: ETL Pipeline & Reporting**
 
-This project demonstrates an end-to-end ETL orchestration using Apache Airflow, hosted on a Google Cloud VM, to load data from Google Cloud Storage (GCS) into BigQuery, apply transformations, create reporting views, and visualize insights via Looker Studio.
+This project demonstrates an end-to-end ETL orchestration using **Apache Airflow**, hosted on a **Google Cloud VM**, to load data from **Google Cloud Storage (GCS)** into **BigQuery**, apply transformations, create reporting views, and visualize insights via **Looker Studio**.
 
-🔧 Tech Stack
-Apache Airflow (on GCP Compute Engine)
 
-Google Cloud Storage (GCS)
+### 🔧 **Tech Stack:**
 
-BigQuery (Staging, Transformed, and Reporting datasets)
+* **Apache Airflow** (on GCP Compute Engine)
 
-Looker Studio (for final reporting)
+* **Google Cloud Storage (GCS)**
 
-✅ Key Features
-Cloud-native ETL pipeline using Airflow and GCP
+* **BigQuery** (Staging, Transformed, and Reporting datasets)
 
-Sensor-based file existence check before loading
+* **Looker Studio** (for final reporting)
 
-Staging-to-transformed-to-reporting data flow
 
-Country-specific BigQuery table creation
+### ✅ **Key Features:**
 
-Filtered view generation for optimized reporting
+* Cloud-native ETL pipeline using Airflow and GCP
 
-Final dashboard built using Looker Studio
+* Sensor-based file existence check before loading
 
-📁 Project Components
-Airflow DAGs
+* Staging-to-transformed-to-reporting data flow
 
-dag1.py: Basic CSV load from GCS to BigQuery
+* Country-specific BigQuery table creation
 
-dag2.py: Adds sensor to wait for file availability
+* Filtered view generation for optimized reporting
 
-dag3.py: Creates country-level tables in transformed_dataset
+* Final dashboard built using Looker Studio
 
-dag4.py: Generates clean views in reporting_dataset
 
-BigQuery datasets
+### 📁 **Project Components:**
 
-staging_dataset, transformed_dataset, reporting_dataset
+* **Airflow DAGs**
 
-GCS bucket: Source CSV file
+  * _dag1.py_ : Basic CSV load from GCS to BigQuery
 
-📊 Output
+  * _dag2.py_ : Adds sensor to wait for file availability
+
+  * _dag3.py_ : Creates country-level tables in _transformed_dataset_
+
+  * _dag4.py_ : Generates clean views in _reporting_dataset_
+
+* **BigQuery Datasets**
+
+  * _staging_dataset_, _transformed_dataset_, _reporting_dataset_
+
+* **GCS bucket:** Source CSV file
+
+
+### 📊 **Output:**
+
 The final dashboard is built in Looker Studio using BigQuery views, showing disease-specific statistics by country, year, and category with key metrics like prevalence and incidence rates.
 
-📄 Full Setup Guide
-For the detailed, step-by-step setup including environment, configurations, errors, and resolutions — refer to the PDF guide included in this repository.
+
+### 📄 **Full Setup Guide:**
+
+For the detailed, step-by-step setup including environment, configurations, errors, and resolutions **— refer to the PDF guide included in this repository.**
 
