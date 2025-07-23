@@ -1,6 +1,6 @@
-# **Airflow + GCP + BigQuery: ETL Pipeline & Reporting**
+# **Airflow + GCP + BigQuery: ELT Pipeline & Reporting**
 
-This project demonstrates an end-to-end ETL orchestration using **Apache Airflow**, hosted on a **Google Cloud VM**, to load data from **Google Cloud Storage (GCS)** into **BigQuery**, apply transformations, create reporting views, and visualize insights via **Looker Studio**.
+This project demonstrates an end-to-end ELT orchestration using **Apache Airflow**, hosted on a **Google Cloud VM**, to load data from **Google Cloud Storage (GCS)** into **BigQuery**, apply transformations, create reporting views, and visualize insights via **Looker Studio**.
 
 
 ### 🔧 **Tech Stack:**
@@ -16,7 +16,7 @@ This project demonstrates an end-to-end ETL orchestration using **Apache Airflow
 
 ### ✅ **Key Features:**
 
-* Cloud-native ETL pipeline using Airflow and GCP
+* Cloud-native ELT pipeline using Airflow and GCP
 
 * Sensor-based file existence check before loading
 
